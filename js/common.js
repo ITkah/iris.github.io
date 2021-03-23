@@ -1,5 +1,17 @@
-var year = new Date().getFullYear();
-$(".year").text(year);
+var swiper = new Swiper('.main_slider', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    mousewheel: true,
+    effect: 'fade',
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.main_arr_next'
+    },
+});
 
 $(".call_menu").on("click", function() {
     $(this).toggleClass("call_menu_active");
@@ -103,6 +115,8 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
             },
         }
     });
-
-
 });
+
+
+var year = new Date().getFullYear();
+$(".year").text(year);
