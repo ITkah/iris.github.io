@@ -18,8 +18,8 @@ var swiper = new Swiper('.partner_slider', {
     spaceBetween: 10,
     loop: true,
     navigation: {
-        nextEl: '.right',
-        prevEl: '.left',
+        nextEl: '.right_part',
+        prevEl: '.left_part',
     },
     breakpoints: {
         0: {
@@ -43,4 +43,38 @@ var swiper = new Swiper('.partner_slider', {
             spaceBetween: 30,
         },
     }
+});
+
+var swiper = new Swiper('.product_slider', {
+    slidesPerView: 4,
+    loop: true,
+    navigation: {
+        nextEl: '.right_prod',
+        prevEl: '.left_prod',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        990: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    }
+});
+
+
+$('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+    $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
 });
