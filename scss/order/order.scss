@@ -337,3 +337,44 @@
         }
     }
 }
+
+#demo-htmlselect {
+    width: 70px!important;
+    height: 27px!important;
+}
+
+.dd-select {
+    width: 70px!important;
+    height: 27.78px!important;
+}
+
+.dd-options {
+    width: 70px!important;
+}
+
+.dd-option {
+    padding: 5px 10px!important;
+}
+
+.dd-pointer-down {
+    display: none;
+}
+
+.dd-option-image,
+.dd-selected-image {
+    height: 18px!important;
+    width: 18px!important;
+    border-radius: 50%;
+    position: relative!important;
+    top: 2px!important;
+}
+
+.dd-selected {
+    padding: 3px 10px!important;
+}
+
+.dd-select {
+    background: #F0F0F0!important;
+    border-radius: 5px!important;
+    border: none!important;
+}
