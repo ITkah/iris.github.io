@@ -66,6 +66,10 @@ var swiper2 = new Swiper('.product_slider', {
     },
     breakpoints: {
         0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        355: {
             slidesPerView: 2,
             spaceBetween: 10,
         },
@@ -98,6 +102,10 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
         },
         breakpoints: {
             0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            355: {
                 slidesPerView: 2,
                 spaceBetween: 10,
             },
