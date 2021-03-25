@@ -1,0 +1,130 @@
+.order {
+    max-width: 90%;
+    margin: 0 auto;
+    @media (max-width: 990px) {
+        max-width: 100%;
+    }
+}
+
+.order_stages_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 50px;
+    @media (max-width: 990px) {
+        margin-bottom: 30px;
+    }
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    &::before {
+        content: '';
+        background: #C4C4C4;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        top: 32%;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    .order_stages_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        position: relative;
+        z-index: 9;
+        width: 200px;
+        @media (max-width: 990px) {
+            width: auto;
+        }
+        .num {
+            height: 60px;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background: #C4C4C4;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            font: 1.25rem "400";
+            @media (max-width: 768px) {
+                height: 50px;
+                width: 50px;
+                font: 1rem "400";
+            }
+        }
+        .text {
+            text-align: center;
+            font: 1.125rem "400";
+            white-space: nowrap;
+            @media (max-width: 990px) {
+                font: 1rem "400";
+            }
+            @media (max-width: 768px) {
+                font: .95rem "400";
+                white-space: normal;
+            }
+        }
+    }
+    .active_stages {
+        .num {
+            background: #C8102E;
+        }
+    }
+}
+
+.order_stages_form {
+    display: grid;
+    grid-template-columns: 3fr 200px;
+    grid-gap: 30px;
+    align-items: center;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .order_stages_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px 50px;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+    }
+    input {
+        padding: 12px 30px;
+        width: 100%;
+        background: #fff;
+        border: 0.5px solid #5B5B5B;
+        border-radius: 5px;
+        box-sizing: border-box;
+        appearance: none;
+        outline: none;
+        font: 1rem "400";
+    }
+    button {
+        font: 1.125rem "300";
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        appearance: none;
+        outline: none;
+        border: none;
+        background: #C8102E;
+        border-radius: 5px;
+        padding: 12px;
+        width: 100%;
+        box-sizing: border-box;
+        transition: .2s;
+        &:hover {
+            background: #a01028;
+        }
+    }
+}

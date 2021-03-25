@@ -1018,6 +1018,165 @@ header {
   .disabled_prid .product_panel {
     opacity: .4; }
 
+.order {
+  max-width: 90%;
+  margin: 0 auto; }
+  @media (max-width: 990px) {
+    .order {
+      max-width: 100%; } }
+
+.order_stages_wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin-bottom: 50px; }
+  @media (max-width: 990px) {
+    .order_stages_wrap {
+      margin-bottom: 30px; } }
+  @media (max-width: 768px) {
+    .order_stages_wrap {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px; } }
+  .order_stages_wrap::before {
+    content: '';
+    background: #C4C4C4;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 32%; }
+    @media (max-width: 768px) {
+      .order_stages_wrap::before {
+        display: none; } }
+  .order_stages_wrap .order_stages_box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #fff;
+    position: relative;
+    z-index: 9;
+    width: 200px; }
+    @media (max-width: 990px) {
+      .order_stages_wrap .order_stages_box {
+        width: auto; } }
+    .order_stages_wrap .order_stages_box .num {
+      height: 60px;
+      width: 60px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      color: #fff;
+      background: #C4C4C4;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      font: 1.25rem "400"; }
+      @media (max-width: 768px) {
+        .order_stages_wrap .order_stages_box .num {
+          height: 50px;
+          width: 50px;
+          font: 1rem "400"; } }
+    .order_stages_wrap .order_stages_box .text {
+      text-align: center;
+      font: 1.125rem "400";
+      white-space: nowrap; }
+      @media (max-width: 990px) {
+        .order_stages_wrap .order_stages_box .text {
+          font: 1rem "400"; } }
+      @media (max-width: 768px) {
+        .order_stages_wrap .order_stages_box .text {
+          font: .95rem "400";
+          white-space: normal; } }
+  .order_stages_wrap .active_stages .num {
+    background: #C8102E; }
+
+.order_stages_form {
+  display: grid;
+  grid-template-columns: 3fr 200px;
+  grid-gap: 30px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 990px) {
+    .order_stages_form {
+      grid-template-columns: 1fr;
+      grid-gap: 20px; } }
+  .order_stages_form .order_stages_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px 50px; }
+    @media (max-width: 990px) {
+      .order_stages_form .order_stages_box {
+        grid-template-columns: 1fr;
+        grid-gap: 20px; } }
+  .order_stages_form input {
+    padding: 12px 30px;
+    width: 100%;
+    background: #fff;
+    border: 0.5px solid #5B5B5B;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: none;
+    font: 1rem "400"; }
+  .order_stages_form button {
+    font: 1.125rem "300";
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: none;
+    border: none;
+    background: #C8102E;
+    border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+    .order_stages_form button:hover {
+      background: #a01028; }
+
 .about_top_wrap .about_bg {
   max-width: 100%;
   width: 100%;
