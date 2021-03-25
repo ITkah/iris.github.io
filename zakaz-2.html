@@ -245,10 +245,10 @@
                 <div class="container">
                     <div class="order_stages_wrap">
                         <div class="order_stages_box active_stages">
-                            <span class="num">1</span>
+                            <span class="num"><img src="img/order/check.svg" alt="check"></span>
                             <p class="text">Ваши данные</p>
                         </div>
-                        <div class="order_stages_box">
+                        <div class="order_stages_box active_stages">
                             <span class="num">2</span>
                             <p class="text">Способ доставки</p>
                         </div>
@@ -259,10 +259,31 @@
                     </div>
                     <form class="order_stages_form">
                         <div class="order_stages_box">
-                            <input type="text" placeholder="Имя Фамилия">
-                            <input type="email" placeholder="E-Mail">
-                            <input type="tel" placeholder="Телефон">
-                            <input type="text" placeholder="Комментарий">
+                            <div class="select_box">
+                                <select name="">
+                                    <option value="Выбрать имеющийся адрес">Выбрать имеющийся адрес</option>
+                                    <option value="Выбрать имеющийся адрес">Выбрать имеющийся адрес</option>
+                                    <option value="Выбрать имеющийся адрес">Выбрать имеющийся адрес</option>
+                                </select>
+                            </div>
+                            <div class="input_box">
+                                <input type="text" placeholder="Отделение\Улица">
+                                <input type="text" placeholder="Дом">
+                            </div>
+                            <div class="select_box">
+                                <select name="">
+                                    <option value="Выбрать имеющийся адрес">Способ доставки</option>
+                                    <option value="Выбрать имеющийся адрес">Способ доставки</option>
+                                    <option value="Выбрать имеющийся адрес">Способ доставки</option>
+                                </select>
+                            </div>
+                            <div class="select_box">
+                                <select name="">
+                                    <option value="Выбрать имеющийся адрес">Способ оплаты</option>
+                                    <option value="Выбрать имеющийся адрес">Способ оплаты</option>
+                                    <option value="Выбрать имеющийся адрес">Способ оплаты</option>
+                                </select>
+                            </div>
                         </div>
                         <button type="submit">продолжить</button>
                     </form>
