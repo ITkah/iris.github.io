@@ -243,22 +243,77 @@
             </div>
             <section class="order padding margin">
                 <div class="container">
-                    <div class="order_stages_wrap">
-                        <div class="order_stages_box active_stages">
-                            <span class="num"><img src="img/order/check.svg" alt="check"></span>
-                            <p class="text">Ваши данные</p>
-                        </div>
-                        <div class="order_stages_box active_stages">
-                            <span class="num"><img src="img/order/check.svg" alt="check"></span>
-                            <p class="text">Способ доставки</p>
-                        </div>
-                        <div class="order_stages_box active_stages">
-                            <span class="num">3</span>
-                            <p class="text">Подтверждение заказа</p>
-                        </div>
-                    </div>
-                    <div class="bug_wrap">
+                    <h2 class="bug_title_main">Корзина</h2>
+                    <div class="bug_wrap bug_page_wrap">
                         <div class="bug_container">
+                            <div class="bug_item_box">
+                                <img src="img/order/order.png" class="order_item_img" height="100" alt="order">
+                                <div class="bug_item_product">
+                                    <p class="title">Product name</p>
+                                    <p class="item">Модель</p>
+                                </div>
+                                <div class="bug_item_product">
+                                    <p class="title">Цвет</p>
+                                    <div class="select_box_coll">
+                                        <select class="demo-htmlselect">
+                                            <option value="1" data-imagesrc="img/order/rd.svg"></option>
+                                            <option value="2" data-imagesrc="img/order/rd.svg"></option>
+                                            <option value="3" data-imagesrc="img/order/rd.svg"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="bug_item_product">
+                                    <p class="title">Количество</p>
+                                    <div class="select_box_coll">
+                                        <select name="">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="bug_item_product">
+                                    <p class="title">Цена</p>
+                                    <p class="item">88888 грн</p>
+                                </div>
+                                <a href="#" class="deleted">
+                                    <img src="img/order/deleted.svg" alt="deleted">
+                                </a>
+                            </div>
+                            <div class="bug_item_box">
+                                <img src="img/order/order.png" class="order_item_img" height="100" alt="order">
+                                <div class="bug_item_product">
+                                    <p class="title">Product name</p>
+                                    <p class="item">Модель</p>
+                                </div>
+                                <div class="bug_item_product">
+                                    <p class="title">Цвет</p>
+                                    <div class="select_box_coll">
+                                        <select class="demo-htmlselect">
+                                            <option value="4" data-imagesrc="img/order/rd.svg"></option>
+                                            <option value="5" data-imagesrc="img/order/rd.svg"></option>
+                                            <option value="6" data-imagesrc="img/order/rd.svg"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="bug_item_product">
+                                    <p class="title">Количество</p>
+                                    <div class="select_box_coll">
+                                        <select name="">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="bug_item_product">
+                                    <p class="title">Цена</p>
+                                    <p class="item">88888 грн</p>
+                                </div>
+                                <a href="#" class="deleted">
+                                    <img src="img/order/deleted.svg" alt="deleted">
+                                </a>
+                            </div>
                             <div class="bug_item_box">
                                 <img src="img/order/order.png" class="order_item_img" height="100" alt="order">
                                 <div class="bug_item_product">
@@ -294,27 +349,40 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="bug_all_wrap">
-                            <div class="bug_all_box">
-                                <p class="bug_all_title">Итоговая сумма:</p>
-                                <p class="bug_all_item">
-                                    6557 грн
-                                </p>
+                        <div class="bug_form_wrap">
+                            <p class="bug_form_title">бонусы и промокоды</p>
+                            <div class="bug_form_box">
+                                <p class="title">Сумма без скидок:</p>
+                                <p class="item">8888 грн</p>
                             </div>
-                            <div class="bug_all_box">
-                                <p class="bug_all_title">Адрес:</p>
-                                <p class="bug_all_item">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis enim mauris vel pretium at enim.
-                                </p>
+                            <div class="bug_form_box">
+                                <p class="title">Всего бонусов:</p>
+                                <div class="bug_form_input">
+                                    <input type="text">
+                                    <p>бонусов</p>
+                                </div>
                             </div>
-                            <div class="bug_all_box">
-                                <p class="bug_all_title">Оплата:</p>
-                                <p class="bug_all_item">
-                                    Способ оплаты
-                                </p>
+                            <div class="bug_form_box">
+                                <p class="title">Использовать:</p>
+                                <div class="bug_form_input">
+                                    <input type="text">
+                                    <p>бонусов</p>
+                                </div>
                             </div>
-                            <a href="#" class="bug_all_btn">Подтвердить заказ</a>
+                            <div class="bug_form_box">
+                                <p class="title">Ввести промокод:</p>
+                                <div class="bug_form_input">
+                                    <input type="text" placeholder="промокод">
+                                </div>
+                            </div>
+                            <div class="bug_form_all">
+                                <p class="title">Итоговая сумма:</p>
+                                <p class="all">6557 грн</p>
+                            </div>
+                            <a href="#" class="bug_form_btn">Оформить заказ</a>
+                            <a href="#" class="bug_form_link">Продолжить покупки</a>
                         </div>
+
                     </div>
                 </div>
             </section>
