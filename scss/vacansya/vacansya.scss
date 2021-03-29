@@ -1,0 +1,180 @@
+.about_why {
+    margin-top: 15px;
+    text-align: center;
+    font: 1rem "300";
+}
+
+.vacansy_main_text {
+    font: 1.125rem "300";
+    margin-bottom: 40px;
+}
+
+.vacansya_title {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font: 1.5rem "600";
+    @media (max-width: 990px) {
+        font: 1.25rem "600";
+    }
+}
+
+.vacansya_wrap_select {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .select_box {
+        position: relative;
+        &::after {
+            content: url(../img/order/order_arr.svg);
+            position: absolute;
+            right: 12px;
+            top: 5px;
+            pointer-events: none;
+        }
+    }
+    select {
+        padding: 6px 15px;
+        width: 100%;
+        background: #F0F0F0;
+        border: .5px solid #F0F0F0;
+        border-radius: 5px;
+        box-sizing: border-box;
+        appearance: none;
+        outline: none;
+        font: 1rem "400";
+        color: #646464;
+    }
+}
+
+.vacansya_item_container {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: .5px solid #C8102E;
+}
+
+.vacansya_item_wrap {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr 1fr;
+    grid-gap: 40px;
+    align-items: center;
+    @media (max-width: 1280px) {
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+    }
+    .vacansya_item_name {
+        .name {
+            font: 1.5rem "400";
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .item_name_box {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            p {
+                font: 1.125rem "300";
+            }
+            p:nth-child(2) {
+                margin: 0 15px;
+            }
+        }
+    }
+    .item_type_box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        p {
+            font: 1.125rem "300";
+        }
+    }
+    .vacansya_item_text {
+        font: 1.125rem/150% "300";
+        span {
+            color: #C8102E;
+            font: 1.125rem "600";
+        }
+    }
+    .vacansya_item_btn {
+        margin: 0 auto;
+        cursor: pointer;
+        font: 1.125rem "600";
+        display: block;
+        text-decoration-line: underline;
+        color: #C8102E;
+    }
+}
+
+.vacansya_item_hide {
+    display: none;
+    .vacansya_hide_box {
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        @media (max-width: 1200px) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        p {
+            font: 1.125rem/150% "300";
+        }
+        .hide_panel {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 15px;
+            @media (max-width: 576px) {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 15px;
+            }
+            .hide_btn {
+                cursor: pointer;
+                font: 1.125rem "600";
+                display: block;
+                margin-left: 35px;
+                text-decoration-line: underline;
+                color: #C8102E;
+                @media (max-width: 576px) {
+                    margin: 0 auto;
+                }
+            }
+            .send {
+                font: 1.125rem "300";
+                text-align: center;
+                color: #fff;
+                cursor: pointer;
+                appearance: none;
+                outline: none;
+                border: none;
+                background: #C8102E;
+                border-radius: 5px;
+                padding: 12px;
+                box-sizing: border-box;
+                transition: .2s;
+                &:hover {
+                    background: #a01028;
+                }
+            }
+        }
+    }
+}
+
+.vacansya_container {
+    .vacansya_item_container:last-child {
+        padding: 0;
+        border: none;
+        margin: 0;
+    }
+}

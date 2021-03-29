@@ -145,3 +145,20 @@ $('.popup-with-zoom-anim').magnificPopup({
     removalDelay: 300,
     mainClass: 'my-mfp-zoom-in'
 });
+
+$.fn.extend({
+    toggleText: function(a, b) {
+        return this.text(this.text() == b ? a : b);
+    }
+});
+
+
+$(".vacansya_item_btn").on("click", function() {
+    $(this).toggleText("Подробнее", "Свернуть");
+    $(this).parent().siblings(".vacansya_item_hide").slideToggle(250);
+});
+
+$(".hide_btn").on("click", function(e) {
+    e.preventDefault();
+    $(this).parent().parent().parent().parent().parent().siblings(".vacansya_item_wrap").children(".vacansya_item_btn").click();
+});
