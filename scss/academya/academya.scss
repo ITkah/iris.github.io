@@ -1,0 +1,399 @@
+.academ_title {
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font: 1.5rem "600";
+    @media (max-width: 990px) {
+        margin-bottom: 30px;
+        font: 1.25rem "600";
+    }
+}
+
+.academ_event {
+    background: url(../img/acc/acc_bg.png) no-repeat center center/cover;
+    .container {
+        padding: 60px 0;
+        @media(max-width: 990px) {
+            padding: 30px 0;
+        }
+    }
+    .academ_event_wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        @media (max-width: 990px) {
+            grid-gap: 15px;
+        }
+    }
+    .academ_event_box {
+        .academ_title_box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            @media (max-width: 990px) {
+                margin-bottom: 10px;
+            }
+            .data {
+                color: #C8102E;
+                text-transform: uppercase;
+                font: 1.25rem "600";
+                margin-right: 30px;
+            }
+            .brend {
+                font: 1.125rem "400";
+                margin-right: 30px;
+            }
+            .city {
+                font: 1.125rem "400";
+                margin-right: 30px;
+            }
+        }
+        .info {
+            margin-bottom: 10px;
+            font: 1.25rem "400";
+            @media (max-width: 990px) {
+                font: 1rem "400";
+            }
+        }
+        .link {
+            font: 1.125rem "300";
+            text-decoration-line: underline;
+            color: #000;
+            @media (max-width: 990px) {
+                font: 1rem "400";
+            }
+        }
+    }
+}
+
+.rev_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    img {
+        margin-bottom: 20px;
+    }
+    .name {
+        margin-bottom: 15px;
+        font: 1.125rem "400";
+    }
+    .text {
+        font: 1rem/24px "300";
+        max-width: 400px;
+        text-align: center;
+    }
+}
+
+.seminar_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 35px;
+    margin-bottom: 30px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .seminar_box {
+        position: relative;
+        min-height: 300px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
+        &::before {
+            transition: .2s;
+            content: '';
+            pointer-events: none;
+            height: 100%;
+            box-sizing: border-box;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 9;
+            top: 0;
+            bottom: 0;
+            opacity: 0;
+            background: #C8102E;
+        }
+        .hide_seminar {
+            display: none;
+        }
+        .sem_bg {
+            max-width: 100%;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+        .seminar_info {
+            position: relative;
+            z-index: 9;
+            display: flex;
+            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+            align-items: flex-end;
+            justify-content: space-between;
+            height: 100%;
+            p {
+                font: 1.125rem/27px "600";
+                color: #fff;
+                margin-right: 15px;
+                @media (max-width: 1280px) {
+                    font: 1.05rem/23px "600";
+                }
+            }
+        }
+    }
+    .active_seminar {
+        overflow: hidden;
+        .hide_seminar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            box-sizing: border-box;
+            z-index: 99;
+            padding: 20px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: #C8102E;
+            a {
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font: 1rem "400";
+                color: #fff;
+                text-decoration: underline;
+                img {
+                    margin-right: 20px;
+                    transform: rotate(180deg);
+                }
+            }
+            p {
+                font: 1.125rem/27px "600";
+                color: #fff;
+                margin-right: 15px;
+                @media (max-width: 1280px) {
+                    font: 1.05rem/23px "600";
+                }
+            }
+        }
+    }
+    .seminar_box:nth-child(2) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        @media (max-width: 990px) {
+            grid-column-start: auto;
+            grid-column-end: auto;
+            grid-row-start: auto;
+            grid-row-end: auto;
+        }
+    }
+    .seminar_box:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        @media (max-width: 990px) {
+            grid-column-start: auto;
+            grid-column-end: auto;
+            grid-row-start: auto;
+            grid-row-end: auto;
+        }
+    }
+    .seminar_box:nth-child(4) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        @media (max-width: 990px) {
+            grid-column-start: auto;
+            grid-column-end: auto;
+            grid-row-start: auto;
+            grid-row-end: auto;
+        }
+    }
+    .seminar_box:nth-child(5) {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        @media (max-width: 990px) {
+            grid-column-start: auto;
+            grid-column-end: auto;
+            grid-row-start: auto;
+            grid-row-end: auto;
+        }
+    }
+}
+
+.calendar_container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 60px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    .calendar_speak_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px 50px;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+    }
+    .speak_box {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-gap: 30px;
+        align-items: center;
+        @media (max-width: 355px) {
+            grid-gap: 10px;
+            grid-template-columns: 1fr;
+        }
+        .name {
+            margin-bottom: 10px;
+            font: 1.125rem "400";
+            @media (max-width: 990px) {
+                margin-bottom: 5px;
+            }
+        }
+        .text {
+            font: 1rem/150% "300";
+        }
+    }
+}
+
+.cal_title {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font: 1.5rem "600";
+    @media (max-width: 990px) {
+        margin-bottom: 20px;
+        font: 1.25rem "600";
+    }
+}
+
+.calendar_title_box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    @media (max-width: 990px) {
+        margin-bottom: 20px;
+    }
+    .cal_title {
+        margin: 0;
+        margin-right: 15px;
+    }
+}
+
+.calendar_select_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 30px;
+    .select_box {
+        position: relative;
+        &::after {
+            content: url(../img/order/order_arr.svg);
+            position: absolute;
+            right: 12px;
+            top: 7px;
+            pointer-events: none;
+        }
+    }
+    select {
+        padding: 8px 10px;
+        width: 100%;
+        padding-right: 30px;
+        background: #F0F0F0;
+        border: 0.5px solid #F0F0F0;
+        border-radius: 5px;
+        box-sizing: border-box;
+        appearance: none;
+        outline: none;
+        font: 1rem "400";
+        color: #646464;
+    }
+}
+
+.mob_calendar_wrap2 {
+    padding: 10px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    @media (max-width: 990px) {
+        padding: 10px;
+    }
+    .mob_title_wrap {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        padding: 10px 5px;
+        padding-top: 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #C8102E;
+        p {
+            text-align: center;
+            color: #000;
+            text-transform: uppercase;
+            font: 1rem '400';
+            @media (max-width: 576px) {
+                font-size: .9rem;
+            }
+        }
+    }
+    .mob_calendar_event {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        padding: 5px 0;
+        .calendar_event_box {
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                height: 30px;
+                width: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font: 1rem "400";
+                text-align: center;
+                border-radius: 50%;
+                color: #000;
+                position: relative;
+                @media (max-width: 576px) {
+                    font-size: .8rem;
+                }
+            }
+        }
+        .active_event {
+            p {
+                &::before {
+                    position: absolute;
+                    content: '';
+                    height: 6px;
+                    width: 6px;
+                    border-radius: 50%;
+                    background: #C8102E;
+                    right: 13px;
+                    bottom: -2px;
+                }
+            }
+        }
+    }
+}

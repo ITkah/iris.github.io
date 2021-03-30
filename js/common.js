@@ -125,6 +125,68 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
     });
 });
 
+var swiper4 = new Swiper('.rev_slider', {
+    slidesPerView: 4,
+    loop: true,
+    navigation: {
+        nextEl: '.right_rev',
+        prevEl: '.left_rev',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        355: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        990: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1400: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    }
+});
+
+var swiper5 = new Swiper('.sem_slider', {
+    slidesPerView: 4,
+    loop: true,
+    navigation: {
+        nextEl: '.right_sem',
+        prevEl: '.left_sem',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        355: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        990: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        1400: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+    }
+});
+
 
 var year = new Date().getFullYear();
 $(".year").text(year);
