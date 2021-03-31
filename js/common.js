@@ -224,3 +224,21 @@ $(".hide_btn").on("click", function(e) {
     e.preventDefault();
     $(this).parent().parent().parent().parent().parent().siblings(".vacansya_item_wrap").children(".vacansya_item_btn").click();
 });
+
+$(".click_all").on("click", function(e) {
+    e.preventDefault();
+    $(".catalog_bottom_text").toggleClass("catalog_bottom_text_active");
+    $(this).toggleText("Развернуть", "Свернуть");
+});
+
+$(".grid").on("click", function(e) {
+    e.preventDefault();
+    $(".catalog_output_list").removeClass("catalog_output_active");
+    $(".catalog_output_grid").addClass("catalog_output_active");
+});
+
+$(".list").on("click", function(e) {
+    e.preventDefault();
+    $(".catalog_output_grid").removeClass("catalog_output_active");
+    $(".catalog_output_list").addClass("catalog_output_active");
+});
