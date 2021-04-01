@@ -220,6 +220,11 @@ $(".vacansya_item_btn").on("click", function() {
     $(this).parent().siblings(".vacansya_item_hide").slideToggle(250);
 });
 
+$(".show_text").on("click", function() {
+    $(this).children("span").toggleText("Развернуть", "Свернуть");
+    $(".tabs_text").toggleClass("hide_text_active");
+});
+
 $(".hide_btn").on("click", function(e) {
     e.preventDefault();
     $(this).parent().parent().parent().parent().parent().siblings(".vacansya_item_wrap").children(".vacansya_item_btn").click();
@@ -241,4 +246,39 @@ $(".list").on("click", function(e) {
     e.preventDefault();
     $(".catalog_output_grid").removeClass("catalog_output_active");
     $(".catalog_output_list").addClass("catalog_output_active");
+});
+
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 20,
+    slidesPerView: 5,
+    direction: 'vertical',
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        0: {
+            direction: 'horizontal',
+        },
+        576: {
+            direction: 'horizontal',
+        },
+        768: {
+            direction: 'horizontal',
+        },
+        990: {
+            direction: 'horizontal',
+        },
+        1280: {
+            direction: 'vertical',
+        },
+    }
+});
+var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+        swiper: galleryThumbs
+    }
 });
