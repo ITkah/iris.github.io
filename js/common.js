@@ -19,7 +19,7 @@ var swiper = new Swiper('.main_slider', {
             if (countAllSlides - 1 === swiperIndex) {
                 setTimeout(function() {
                     $(".swiper-wrapper .swiper-slide:last-child .unchor").click();
-                }, 1500);
+                }, 1000);
             }
         }
     }
