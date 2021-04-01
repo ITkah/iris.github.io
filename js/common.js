@@ -282,3 +282,7 @@ var galleryTop = new Swiper('.gallery-top', {
         swiper: galleryThumbs
     }
 });
+
+$(".search img").on("click", function() {
+    $(".search_form").toggleClass("search_form_active");
+});
