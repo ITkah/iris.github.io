@@ -10,18 +10,6 @@ var swiper = new Swiper('.main_slider', {
     },
     navigation: {
         nextEl: '.main_arr_next'
-    },
-    on: {
-        slideChange() {
-            const countAllSlides = swiper.slides.length
-            const swiperIndex = swiper.realIndex
-
-            if (countAllSlides - 1 === swiperIndex) {
-                setTimeout(function() {
-                    $(".swiper-wrapper .swiper-slide:last-child .unchor").click();
-                }, 1000);
-            }
-        }
     }
 });
 
