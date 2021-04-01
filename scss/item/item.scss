@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    @media (max-width: 990px) {
+    @media (max-width: 1200px) {
         flex-direction: column;
         margin-bottom: -20px;
     }
@@ -128,7 +128,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        @media (max-width: 990px) {
+        @media (max-width: 1200px) {
             width: auto;
             display: block;
         }

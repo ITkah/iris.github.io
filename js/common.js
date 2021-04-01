@@ -264,7 +264,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
         768: {
             direction: 'horizontal',
         },
-        990: {
+        1200: {
             direction: 'horizontal',
         },
         1280: {
