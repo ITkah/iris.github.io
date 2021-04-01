@@ -447,6 +447,11 @@
         font: 1rem "300";
         z-index: 9;
         border-radius: 5px;
+        transition: .2s;
+        &:hover {
+            background: #C8102E;
+            color: #fff;
+        }
         @media (max-width: 990px) {
             font: .87rem "300";
             left: 10px;
@@ -454,10 +459,6 @@
             max-width: 100px;
             padding: 5px;
         }
-    }
-    .product_type_active {
-        background: #C8102E;
-        color: #fff;
     }
     .product_panel {
         position: absolute;
@@ -489,13 +490,13 @@
             img:last-child {
                 opacity: 0;
             }
-        }
-        .product_panel_active {
-            img {
-                opacity: 0;
-            }
-            img:last-child {
-                opacity: 1;
+            &:hover {
+                img {
+                    opacity: 0;
+                }
+                img:last-child {
+                    opacity: 1;
+                }
             }
         }
     }
