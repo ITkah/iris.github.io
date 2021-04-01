@@ -108,3 +108,15 @@ a {
     font-weight: 800;
     font-style: normal;
 }
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgba(26, 24, 47, 0.2);
+    border-radius: 5px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c8102e;
+    border-radius: 5px;
+}

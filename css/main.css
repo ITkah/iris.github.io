@@ -2906,6 +2906,138 @@ header {
 .checkbox input[type="checkbox"]:checked + label::after {
   content: ""; }
 
+.compare_title {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font: 1.5rem "600"; }
+  @media (max-width: 990px) {
+    .compare_title {
+      margin-bottom: 20px;
+      font: 1.25rem "600"; } }
+
+.compare_container {
+  border: 1px solid #ddd; }
+  .compare_container .compare_title {
+    background: #eeeeee;
+    text-transform: uppercase;
+    padding: 10px;
+    font: .9rem "400";
+    margin: 0; }
+
+.compare_wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-x: scroll; }
+  .compare_wrap .rating-result {
+    position: relative;
+    top: -2px; }
+  .compare_wrap .rait {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .compare_wrap .rating-result span {
+    padding: 0;
+    font-size: 20px;
+    margin: 0;
+    color: #CBCBCB; }
+  .compare_wrap .rating-result > span:before {
+    content: '★'; }
+  .compare_wrap .rating-result > span.active {
+    color: #FFB600; }
+  .compare_wrap .compare_box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    width: 350px; }
+    .compare_wrap .compare_box img {
+      max-width: 100%;
+      height: 80px;
+      -o-object-fit: contain;
+         object-fit: contain;
+      display: block;
+      margin: 0 auto; }
+    .compare_wrap .compare_box .title {
+      min-width: 200px;
+      color: #000;
+      font: 1rem "400"; }
+    .compare_wrap .compare_box .text {
+      font: 1rem "400";
+      color: #000; }
+    .compare_wrap .compare_box .name {
+      text-decoration: underline;
+      font: 1.125rem "600"; }
+  .compare_wrap .compare_btn_wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 15px 10px;
+    background: #eeeeee; }
+    .compare_wrap .compare_btn_wrap .add {
+      font: 1rem "300";
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      outline: none;
+      border: none;
+      background: #C8102E;
+      border-radius: 5px;
+      padding: 10px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      margin: 5px; }
+      .compare_wrap .compare_btn_wrap .add:hover {
+        background: #a01028; }
+    .compare_wrap .compare_btn_wrap .remove {
+      font: 1rem "300";
+      text-decoration: underline;
+      color: #a01028;
+      margin-left: 15px; }
+  .compare_wrap .compare_item:last-child .compare_box {
+    margin-right: 0; }
+
 .blog {
   position: relative; }
   .blog::after {
@@ -4607,3 +4739,13 @@ a {
   src: local("../font/Proxima Nova Extrabold"), local("ProximaNova-Extrabld"), url("../font/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova-Extrabld.woff2") format("woff2"), url("../font/ProximaNova-Extrabld.woff") format("woff"), url("../font/ProximaNova-Extrabld.ttf") format("truetype");
   font-weight: 800;
   font-style: normal; }
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: rgba(26, 24, 47, 0.2);
+  border-radius: 5px;
+  height: 7px; }
+
+::-webkit-scrollbar-thumb {
+  background: #c8102e;
+  border-radius: 5px; }

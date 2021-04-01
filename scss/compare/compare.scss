@@ -1,0 +1,112 @@
+.compare_title {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font: 1.5rem "600";
+    @media (max-width: 990px) {
+        margin-bottom: 20px;
+        font: 1.25rem "600";
+    }
+}
+
+.compare_container {
+    border: 1px solid #ddd;
+    .compare_title {
+        background: rgba(238, 238, 238, 1);
+        text-transform: uppercase;
+        padding: 10px;
+        font: .9rem "400";
+        margin: 0;
+    }
+}
+
+.compare_wrap {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: scroll;
+    .rating-result {
+        position: relative;
+        top: -2px;
+    }
+    .rait {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .rating-result span {
+        padding: 0;
+        font-size: 20px;
+        margin: 0;
+        color: #CBCBCB;
+    }
+    .rating-result>span:before {
+        content: '★';
+    }
+    .rating-result>span.active {
+        color: #FFB600;
+    }
+    .compare_box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        margin-right: 25px;
+        margin-bottom: 10px;
+        width: 350px;
+        img {
+            max-width: 100%;
+            height: 80px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+        .title {
+            min-width: 200px;
+            color: #000;
+            font: 1rem "400";
+        }
+        .text {
+            font: 1rem "400";
+            color: #000;
+        }
+        .name {
+            text-decoration: underline;
+            font: 1.125rem "600";
+        }
+    }
+    .compare_btn_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 15px 10px;
+        background: #eeeeee;
+        .add {
+            font: 1rem "300";
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            appearance: none;
+            outline: none;
+            border: none;
+            background: #C8102E;
+            border-radius: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: .2s;
+            margin: 5px;
+            &:hover {
+                background: #a01028;
+            }
+        }
+        .remove {
+            font: 1rem "300";
+            text-decoration: underline;
+            color: #a01028;
+            margin-left: 15px;
+        }
+    }
+    .compare_item:last-child {
+        .compare_box {
+            margin-right: 0;
+        }
+    }
+}
