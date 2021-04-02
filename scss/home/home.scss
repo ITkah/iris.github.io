@@ -478,6 +478,16 @@
     position: relative;
     background: #FFF;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+    .product_link {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9;
+    }
     .product_type {
         position: absolute;
         left: 20px;
@@ -489,7 +499,7 @@
         border: 1px solid #C8102E;
         box-sizing: border-box;
         font: 1rem "300";
-        z-index: 9;
+        z-index: 99;
         border-radius: 5px;
         transition: .2s;
         &:hover {
@@ -508,6 +518,7 @@
         position: absolute;
         right: 20px;
         top: 20px;
+        z-index: 99;
         display: flex;
         flex-direction: column;
         @media (max-width: 990px) {
@@ -595,6 +606,8 @@
         grid-gap: 20px;
         align-items: center;
         padding: 0 10px;
+        position: relative;
+        z-index: 99;
         padding-bottom: 20px;
         @media (max-width: 990px) {
             grid-gap: 10px;

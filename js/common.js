@@ -60,7 +60,7 @@ var swiper1 = new Swiper('.partner_slider', {
 
 var swiper2 = new Swiper('.product_slider', {
     slidesPerView: 4,
-    loop: true,
+    loop: false,
     navigation: {
         nextEl: '.right_prod',
         prevEl: '.left_prod',
@@ -96,7 +96,7 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
         .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
     var swiper3 = new Swiper('.product_slider', {
         slidesPerView: 4,
-        loop: true,
+        loop: false,
         navigation: {
             nextEl: '.right_prod',
             prevEl: '.left_prod',
