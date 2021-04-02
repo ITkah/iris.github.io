@@ -15,7 +15,7 @@ var swiper = new Swiper('.main_slider', {
 
 $(".call_menu").on("click", function() {
     $(".search_form").removeClass("search_form_active");
-    $(this).toggleClass("call_menu_active");
+    $(".call_menu").toggleClass("call_menu_active");
     $(".hide_menu").toggleClass("hide_menu_active");
     $("body,html").toggleClass("active_body");
 });
@@ -285,5 +285,5 @@ var galleryTop = new Swiper('.gallery-top', {
 });
 
 $(".search img").on("click", function() {
-    $(".search_form").toggleClass("search_form_active");
+    $(this).siblings(".search_form").toggleClass("search_form_active");
 });
