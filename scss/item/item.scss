@@ -199,6 +199,7 @@
             svg,
             img {
                 margin-left: 5px;
+                height: 16px;
             }
         }
         .article {
@@ -349,6 +350,11 @@
                     display: block;
                     border: 0.5px solid #000000;
                     margin: 0 5px;
+                }
+            }
+            .active_color_box {
+                span {
+                    border: 3px solid #C8102E;
                 }
             }
         }
@@ -554,6 +560,11 @@
         img {
             position: relative;
             left: -4px;
+            transform: rotate(90deg);
+        }
+    }
+    .show_text_active {
+        img {
             transform: rotate(-90deg);
         }
     }

@@ -222,6 +222,7 @@ $(".vacansya_item_btn").on("click", function() {
 });
 
 $(".show_text").on("click", function() {
+    $(this).toggleClass("show_text_active");
     $(this).children("span").toggleText("Развернуть", "Свернуть");
     $(".tabs_text").toggleClass("hide_text_active");
 });
