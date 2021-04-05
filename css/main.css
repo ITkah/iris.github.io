@@ -3198,6 +3198,7 @@ header {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+    cursor: pointer;
     text-decoration: underline;
     color: #929292; }
   .catalog_bottom .catalog_bottom_text {
