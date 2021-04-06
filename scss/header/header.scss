@@ -164,6 +164,7 @@ header {
                             display: grid;
                             grid-template-columns: 1fr 1fr;
                             grid-gap: 15px;
+                            align-items: flex-start;
                             position: relative;
                             ul {
                                 display: grid;
@@ -209,6 +210,17 @@ header {
                                         grid-template-columns: 1fr;
                                         grid-gap: 20px;
                                         pointer-events: none;
+                                        &::before {
+                                            content: '';
+                                            height: 100%;
+                                            width: 100%;
+                                            background: transparent;
+                                            position: absolute;
+                                            left: -50%;
+                                            @media (max-width: 990px) {
+                                                display: none;
+                                            }
+                                        }
                                         li {
                                             margin: 0;
                                             padding: 0;

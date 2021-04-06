@@ -189,6 +189,10 @@ header {
               display: grid;
               grid-template-columns: 1fr 1fr;
               grid-gap: 15px;
+              -webkit-box-align: start;
+              -webkit-align-items: flex-start;
+                  -ms-flex-align: start;
+                      align-items: flex-start;
               position: relative; }
               header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul {
                 display: grid;
@@ -225,6 +229,16 @@ header {
                     grid-template-columns: 1fr;
                     grid-gap: 20px;
                     pointer-events: none; }
+                    header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2::before {
+                      content: '';
+                      height: 100%;
+                      width: 100%;
+                      background: transparent;
+                      position: absolute;
+                      left: -50%; }
+                      @media (max-width: 990px) {
+                        header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2::before {
+                          display: none; } }
                     header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2 li {
                       margin: 0;
                       padding: 0; }
