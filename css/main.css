@@ -137,7 +137,7 @@ header {
       transition: .2s; }
       header nav ul li {
         padding: 26px 0;
-        margin: 0 15px; }
+        margin: 0 13px; }
         @media (max-width: 1280px) {
           header nav ul li {
             margin: 0 10px; } }
@@ -228,14 +228,34 @@ header {
                     display: grid;
                     grid-template-columns: 1fr;
                     grid-gap: 20px;
+                    -webkit-box-align: start;
+                    -webkit-align-items: start;
+                        -ms-flex-align: start;
+                            align-items: start;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    -webkit-box-pack: start;
+                    -webkit-justify-content: flex-start;
+                        -ms-flex-pack: start;
+                            justify-content: flex-start;
                     pointer-events: none; }
+                    @media (max-width: 990px) {
+                      header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2 {
+                        display: grid; } }
                     header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2::before {
                       content: '';
                       height: 100%;
                       width: 100%;
                       background: transparent;
                       position: absolute;
-                      left: -50%; }
+                      left: -70%; }
                       @media (max-width: 990px) {
                         header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2::before {
                           display: none; } }
@@ -249,11 +269,16 @@ header {
                         font: .9rem "400";
                         margin: 0;
                         cursor: pointer;
+                        z-index: 9999;
+                        position: relative;
                         padding: 0; }
                         header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2 li a:hover {
                           color: #C8102E; }
                           header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2 li a:hover svg path {
                             fill: #C8102E; }
+                    header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2 a {
+                      position: relative;
+                      z-index: 999; }
           header nav ul li .sub_menu .sub_menu_product {
             display: grid;
             grid-template-columns: 1fr;
@@ -285,12 +310,19 @@ header {
                   font: 1.125rem "400"; }
                 header nav ul li .sub_menu .sub_menu_product .sub_product_box .product_box_info .prod_link {
                   padding: 7px 40px;
-                  background: #C8102E;
+                  color: #000;
+                  background: transparent;
+                  border: 1px solid #C8102E;
                   border-radius: 5px;
                   text-align: center;
-                  color: #fff;
                   text-transform: capitalize;
-                  font: 1rem "300"; }
+                  font: 1rem "300";
+                  -webkit-transition: .2s;
+                  -o-transition: .2s;
+                  transition: .2s; }
+                  header nav ul li .sub_menu .sub_menu_product .sub_product_box .product_box_info .prod_link:hover {
+                    background: #C8102E;
+                    color: #fff; }
               header nav ul li .sub_menu .sub_menu_product .sub_product_box img {
                 max-width: 100%;
                 height: 100%;
@@ -310,17 +342,12 @@ header {
               -webkit-box-pack: end;
               -webkit-justify-content: flex-end;
                   -ms-flex-pack: end;
-                      justify-content: flex-end;
-              height: 100%; }
-              header nav ul li .sub_menu .sub_menu_product .sub_product_box:last-child .product_box_info .prod_link {
-                color: #000;
-                background: transparent;
-                border: 1px solid #C8102E; }
+                      justify-content: flex-end; }
       header nav ul a {
         text-transform: uppercase;
         color: #000;
         font: 1rem "400"; }
-        @media (max-width: 1280px) {
+        @media (max-width: 1400px) {
           header nav ul a {
             font: .9rem "400"; } }
         @media (max-width: 1100px) {
@@ -3570,6 +3597,30 @@ header {
     @media (max-width: 990px) {
       .blog .container {
         margin-bottom: 50px; } }
+  .blog .tabs_title_box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 35px; }
+    @media (max-width: 990px) {
+      .blog .tabs_title_box {
+        margin-bottom: 15px;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; } }
+    .blog .tabs_title_box .catalog_title {
+      margin: 0;
+      margin-right: 20px; }
+      @media (max-width: 990px) {
+        .blog .tabs_title_box .catalog_title {
+          text-align: center;
+          width: 100%;
+          margin: 0; } }
   .blog .tabs__caption {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3582,14 +3633,15 @@ header {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    margin-bottom: 35px; }
+    position: relative;
+    top: 2px; }
     @media (max-width: 990px) {
       .blog .tabs__caption {
-        margin-bottom: 15px;
         -webkit-box-pack: center;
         -webkit-justify-content: center;
             -ms-flex-pack: center;
-                justify-content: center; } }
+                justify-content: center;
+        top: 0; } }
     .blog .tabs__caption .catalog_title {
       font: 1.5rem "600";
       margin-right: 35px;

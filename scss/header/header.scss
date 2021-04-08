@@ -109,7 +109,7 @@ header {
             transition: .2s;
             li {
                 padding: 26px 0;
-                margin: 0 15px;
+                margin: 0 13px;
                 @media (max-width: 1280px) {
                     margin: 0 10px;
                 }
@@ -209,14 +209,21 @@ header {
                                         display: grid;
                                         grid-template-columns: 1fr;
                                         grid-gap: 20px;
+                                        align-items: start;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: flex-start;
                                         pointer-events: none;
+                                        @media (max-width: 990px) {
+                                            display: grid;
+                                        }
                                         &::before {
                                             content: '';
                                             height: 100%;
                                             width: 100%;
                                             background: transparent;
                                             position: absolute;
-                                            left: -50%;
+                                            left: -70%;
                                             @media (max-width: 990px) {
                                                 display: none;
                                             }
@@ -232,6 +239,8 @@ header {
                                                 font: .9rem "400";
                                                 margin: 0;
                                                 cursor: pointer;
+                                                z-index: 9999;
+                                                position: relative;
                                                 padding: 0;
                                                 &:hover {
                                                     color: #C8102E;
@@ -242,6 +251,10 @@ header {
                                                     }
                                                 }
                                             }
+                                        }
+                                        a {
+                                            position: relative;
+                                            z-index: 999;
                                         }
                                     }
                                 }
@@ -271,12 +284,18 @@ header {
                                 }
                                 .prod_link {
                                     padding: 7px 40px;
-                                    background: #C8102E;
+                                    color: #000;
+                                    background: transparent;
+                                    border: 1px solid #C8102E;
                                     border-radius: 5px;
                                     text-align: center;
-                                    color: #fff;
                                     text-transform: capitalize;
                                     font: 1rem "300";
+                                    transition: .2s;
+                                    &:hover {
+                                        background: #C8102E;
+                                        color: #fff;
+                                    }
                                 }
                             }
                             img {
@@ -295,12 +314,6 @@ header {
                             .product_box_info {
                                 align-items: flex-end;
                                 justify-content: flex-end;
-                                height: 100%;
-                                .prod_link {
-                                    color: #000;
-                                    background: transparent;
-                                    border: 1px solid #C8102E;
-                                }
                             }
                         }
                     }
@@ -310,7 +323,7 @@ header {
                 text-transform: uppercase;
                 color: #000;
                 font: 1rem "400";
-                @media (max-width: 1280px) {
+                @media (max-width: 1400px) {
                     font: .9rem "400";
                 }
                 @media (max-width: 1100px) {

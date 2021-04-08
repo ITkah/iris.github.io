@@ -20,14 +20,33 @@
             margin-bottom: 50px;
         }
     }
+    .tabs_title_box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+        @media (max-width: 990px) {
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        .catalog_title {
+            margin: 0;
+            margin-right: 20px;
+            @media (max-width: 990px) {
+                text-align: center;
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
     .tabs__caption {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        margin-bottom: 35px;
+        position: relative;
+        top: 2px;
         @media (max-width: 990px) {
-            margin-bottom: 15px;
             justify-content: center;
+            top: 0;
         }
         .catalog_title {
             font: 1.5rem "600";
