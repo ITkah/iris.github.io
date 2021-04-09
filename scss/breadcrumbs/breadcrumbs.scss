@@ -1,6 +1,43 @@
 .breadcrumb {
     margin-top: 115px;
+    background: #eef0f3;
     @media (max-width: 990px) {
         margin-top: 65px;
+    }
+    .container {
+        padding: 10px 0;
+    }
+    .breadcrumb_list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        li {
+            display: flex;
+            align-items: center;
+            padding-right: 15px;
+            &::after {
+                content: '\2192	';
+                color: rgba(105, 105, 115, 1);
+                position: relative;
+                left: 7px;
+            }
+        }
+        a {
+            text-decoration: underline;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        a,
+        span {
+            font: 1rem "400";
+            color: rgba(105, 105, 115, 1);
+        }
+        li:last-child {
+            &::after {
+                display: none;
+            }
+        }
     }
 }

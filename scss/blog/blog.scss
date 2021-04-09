@@ -182,7 +182,7 @@
             }
         }
     }
-    .news_box:last-child {
+    .news_box:nth-child(4) {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-column-start: 2;
