@@ -288,3 +288,43 @@ var galleryTop = new Swiper('.gallery-top', {
 $(".search img").on("click", function() {
     $(this).siblings(".search_form").toggleClass("search_form_active");
 });
+
+
+
+var swiper9 = new Swiper('.about_team_wrap', {
+    slidesPerView: 6,
+    loop: false,
+    grabCursor:true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        355: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        990: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        1600: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+        },
+        1800: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+        },
+    },
+    autoplay: {
+        delay: 4000,
+    },
+    // pagination: {
+    //     el: '.swiper-pagination',
+    // },
+});
