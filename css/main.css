@@ -4604,16 +4604,31 @@ header {
 
 .calendar_container {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 1200px;
   grid-gap: 60px; }
-  @media (max-width: 990px) {
+  @media (max-width: 1800px) {
     .calendar_container {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1000px; } }
+  @media (max-width: 1600px) {
+    .calendar_container {
+      grid-template-columns: 1fr 900px; } }
+  @media (max-width: 1400px) {
+    .calendar_container {
+      grid-template-columns: 1fr 800px;
       grid-gap: 30px; } }
+  @media (max-width: 1280px) {
+    .calendar_container {
+      grid-template-columns: 1fr 800px; } }
+  @media (max-width: 1200px) {
+    .calendar_container {
+      grid-template-columns: 1fr 700px; } }
+  @media (max-width: 1024px) {
+    .calendar_container {
+      display: block; } }
   .calendar_container .calendar_speak_wrap {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px 50px; }
+    grid-template-columns: 1fr;
+    grid-gap: 30px; }
     @media (max-width: 990px) {
       .calendar_container .calendar_speak_wrap {
         grid-template-columns: 1fr;
@@ -4626,10 +4641,18 @@ header {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 576px) {
+      .calendar_container .speak_box {
+        grid-gap: 20px;
+        grid-template-columns: 120px 1fr; } }
     @media (max-width: 355px) {
       .calendar_container .speak_box {
         grid-gap: 10px;
         grid-template-columns: 1fr; } }
+    @media (max-width: 576px) {
+      .calendar_container .speak_box img {
+        width: 120px !important;
+        height: auto !important; } }
     .calendar_container .speak_box .name {
       margin-bottom: 10px;
       font: 1.125rem "400"; }
@@ -4768,6 +4791,17 @@ header {
       background: #C8102E;
       right: 13px;
       bottom: -2px; }
+
+.calendar_slier {
+  padding-bottom: 25px; }
+  .calendar_slier .swiper-pagination {
+    bottom: 0 !important; }
+  .calendar_slier .swiper-pagination-bullet {
+    background: #C8102E; }
+
+@media (max-width: 1024px) {
+  .calendar_speak {
+    margin-top: 25px; } }
 
 .bug_title_main {
   margin-bottom: 40px;
@@ -5319,6 +5353,9 @@ footer {
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
   opacity: 0; }
+
+.border_red {
+  border-color: #C8102E; }
 
 html,
 body {
