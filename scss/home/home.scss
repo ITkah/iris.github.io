@@ -584,15 +584,22 @@
         .product_name {
             font: 1.25rem "400";
             margin-right: 5px;
+            height: calc(1.25 * 1.25rem * 3);
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
             @media (max-width: 990px) {
                 margin: 0 0 10px 0;
                 text-align: center;
                 font: 1.125rem "400";
                 margin-bottom: 5px;
+                height: calc(1.25 * 1.125rem * 3);
             }
         }
         .product_price {
             font: 1.25rem "400";
+            white-space: nowrap;
             @media (max-width: 990px) {
                 text-align: center;
                 font: 1.125rem "400";
@@ -839,6 +846,7 @@
             }
             .product_price {
                 font: 1.25rem "400";
+                white-space: nowrap;
                 @media (max-width: 990px) {
                     text-align: center;
                     font: 1.125rem "400";

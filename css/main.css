@@ -1252,15 +1252,24 @@ header {
         padding-bottom: 12px; } }
     .product_box .product_info_box .product_name {
       font: 1.25rem "400";
-      margin-right: 5px; }
+      margin-right: 5px;
+      height: -webkit-calc(1.25 * 1.25rem * 3);
+      height: calc(1.25 * 1.25rem * 3);
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical; }
       @media (max-width: 990px) {
         .product_box .product_info_box .product_name {
           margin: 0 0 10px 0;
           text-align: center;
           font: 1.125rem "400";
-          margin-bottom: 5px; } }
+          margin-bottom: 5px;
+          height: -webkit-calc(1.25 * 1.125rem * 3);
+          height: calc(1.25 * 1.125rem * 3); } }
     .product_box .product_info_box .product_price {
-      font: 1.25rem "400"; }
+      font: 1.25rem "400";
+      white-space: nowrap; }
       @media (max-width: 990px) {
         .product_box .product_info_box .product_price {
           text-align: center;
@@ -1518,7 +1527,8 @@ header {
           font: 1.125rem "400";
           margin-bottom: 5px; } }
     .home_product .product_box .product_info_box .product_price {
-      font: 1.25rem "400"; }
+      font: 1.25rem "400";
+      white-space: nowrap; }
       @media (max-width: 990px) {
         .home_product .product_box .product_info_box .product_price {
           text-align: center;
@@ -4049,9 +4059,11 @@ header {
         -ms-flex-pack: start;
             justify-content: flex-start; }
     .vacansya_item_wrap .vacansya_item_name .item_name_box p {
+      color: #000;
       font: 1.125rem "300"; }
     .vacansya_item_wrap .vacansya_item_name .item_name_box p:nth-child(2) {
-      margin: 0 15px; }
+      margin: 0 15px;
+      color: #000; }
   .vacansya_item_wrap .item_type_box {
     display: grid;
     grid-template-columns: 1fr;
@@ -4071,6 +4083,8 @@ header {
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
     color: #C8102E; }
+  .vacansya_item_wrap a {
+    color: #000; }
 
 .vacansya_item_hide {
   display: none; }
@@ -4084,6 +4098,10 @@ header {
         grid-template-columns: 1fr;
         grid-gap: 20px; } }
     .vacansya_item_hide .vacansya_hide_box p {
+      font: 1.125rem/150% "300"; }
+    .vacansya_item_hide .vacansya_hide_box strong {
+      font: 1.125rem/150% "600"; }
+    .vacansya_item_hide .vacansya_hide_box li {
       font: 1.125rem/150% "300"; }
     .vacansya_item_hide .vacansya_hide_box .hide_panel {
       display: -webkit-box;

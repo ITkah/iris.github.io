@@ -83,10 +83,12 @@
             align-items: center;
             justify-content: flex-start;
             p {
+                color: #000;
                 font: 1.125rem "300";
             }
             p:nth-child(2) {
                 margin: 0 15px;
+                color: #000;
             }
         }
     }
@@ -113,6 +115,9 @@
         text-decoration-line: underline;
         color: #C8102E;
     }
+    a {
+        color: #000;
+    }
 }
 
 .vacansya_item_hide {
@@ -128,6 +133,12 @@
         }
         p {
             font: 1.125rem/150% "300";
+        }
+        strong {
+            font: 1.125rem/150% "600";
+        }
+        li {
+            font: 1.125rem/150% "300"; 
         }
         .hide_panel {
             display: flex;
