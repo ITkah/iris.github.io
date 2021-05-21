@@ -408,3 +408,11 @@ footer {
 .border_red {
     border-color: #C8102E;
 }
+
+.active_fav img:first-child{
+    opacity: 0!important;
+}
+
+.active_fav img:last-child{
+    opacity: 1!important;
+}

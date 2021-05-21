@@ -112,13 +112,14 @@ header {
             justify-content: center;
     margin: 0 20px;
     height: 100%;
-    position: relative; }
+    position: static; }
     @media (max-width: 1200px) {
       header nav {
         margin: 0 5px; } }
     @media (max-width: 990px) {
       header nav {
-        display: none; } }
+        display: none;
+        position: relative; } }
     header nav ul {
       display: -webkit-box;
       display: -webkit-flex;
@@ -150,9 +151,9 @@ header {
         header nav ul li:hover a {
           color: #C8102E; }
         header nav ul li .sub_menu {
-          width: 120%;
-          top: 131%;
-          left: 0;
+          width: 70vw;
+          top: 100%;
+          left: 16%;
           padding: 20px;
           background: #fff;
           position: absolute;
@@ -163,11 +164,16 @@ header {
           pointer-events: none; }
           @media (max-width: 1400px) {
             header nav ul li .sub_menu {
-              top: 120%; } }
+              left: 15%;
+              width: 70vw; } }
           @media (max-width: 1280px) {
             header nav ul li .sub_menu {
-              width: 145%;
-              left: -15%; } }
+              left: 6%;
+              width: 84vw; } }
+          @media (max-width: 1024px) {
+            header nav ul li .sub_menu {
+              left: 2%;
+              width: 86vw; } }
           header nav ul li .sub_menu::after {
             content: '';
             height: 50px;
@@ -215,13 +221,20 @@ header {
                     opacity: 1;
                     pointer-events: auto; }
                   header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li svg {
-                    margin-right: 5px; }
+                    margin-right: 5px;
+                    height: 10px;
+                    min-height: 10px;
+                    min-width: 6px;
+                    width: 6px; }
                   header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li a {
                     color: #000;
                     font: .9rem "400";
                     margin: 0;
                     cursor: pointer;
                     padding: 0; }
+                    @media (max-width: 1280px) {
+                      header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li a {
+                        font: .87rem "400"; } }
                     header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li a:hover {
                       color: #C8102E; }
                       header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li a:hover svg path {
@@ -279,7 +292,11 @@ header {
                           -ms-flex-align: center;
                               align-items: center; }
                       header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2 li svg {
-                        margin-right: 5px; }
+                        margin-right: 5px;
+                        height: 10px;
+                        min-height: 10px;
+                        min-width: 6px;
+                        width: 6px; }
                       header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2 li a {
                         color: #000;
                         font: .9rem "400";
@@ -288,6 +305,9 @@ header {
                         z-index: 9999;
                         position: relative;
                         padding: 0; }
+                        @media (max-width: 1280px) {
+                          header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2 li a {
+                            font: .87rem "400"; } }
                         header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2 li a:hover {
                           color: #C8102E; }
                           header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2 li a:hover svg path {
@@ -362,8 +382,7 @@ header {
       header nav ul a {
         text-transform: uppercase;
         color: #000;
-        font: 1rem "400";
-        white-space: nowrap; }
+        font: 1rem "400"; }
         @media (max-width: 1400px) {
           header nav ul a {
             font: .9rem "400"; } }
@@ -2818,9 +2837,9 @@ header {
       outline: none;
       font: 1rem "400";
       color: #646464; }
-  .item_info_wrap .item_setting_box .select_box:last-child::before {
+  .item_info_wrap .item_setting_box .select_none::before {
     display: none; }
-  .item_info_wrap .item_setting_box .select_box:last-child::after {
+  .item_info_wrap .item_setting_box .select_none::after {
     display: none; }
 
 .item_info_wrap .item_order_title {
@@ -5409,6 +5428,12 @@ footer {
 
 .border_red {
   border-color: #C8102E; }
+
+.active_fav img:first-child {
+  opacity: 0 !important; }
+
+.active_fav img:last-child {
+  opacity: 1 !important; }
 
 .list-group-item {
   margin-bottom: 10px;
