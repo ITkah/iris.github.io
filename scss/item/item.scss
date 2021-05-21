@@ -398,6 +398,27 @@
                 font: 1rem "400";
                 color: #646464;
             }
+            input {
+                padding: 8px 10px;
+                width: 100%;
+                padding-right: 30px;
+                background: #F0F0F0;
+                border: 0.5px solid #F0F0F0;
+                border-radius: 5px;
+                box-sizing: border-box;
+                appearance: none;
+                outline: none;
+                font: 1rem "400";
+                color: #646464;
+            }
+        }
+        .select_box:last-child {
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: none;
+            }
         }
     }
     .item_order_title {

@@ -2803,6 +2803,25 @@ header {
       outline: none;
       font: 1rem "400";
       color: #646464; }
+    .item_info_wrap .item_setting_box .select_box input {
+      padding: 8px 10px;
+      width: 100%;
+      padding-right: 30px;
+      background: #F0F0F0;
+      border: 0.5px solid #F0F0F0;
+      border-radius: 5px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      outline: none;
+      font: 1rem "400";
+      color: #646464; }
+  .item_info_wrap .item_setting_box .select_box:last-child::before {
+    display: none; }
+  .item_info_wrap .item_setting_box .select_box:last-child::after {
+    display: none; }
 
 .item_info_wrap .item_order_title {
   margin-bottom: 20px;
