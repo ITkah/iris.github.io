@@ -234,7 +234,7 @@
     .select_box_coll {
         position: relative;
         width: 70px;
-        select {
+        input {
             position: relative;
             padding: 5px 10px;
             width: 70px;
@@ -247,13 +247,6 @@
             font: 1rem "400";
             appearance: none;
             color: #000;
-        }
-        &::after {
-            content: url(../img/order/order_arr.svg);
-            position: absolute;
-            right: 10px;
-            top: 4px;
-            pointer-events: none;
         }
     }
     .title {

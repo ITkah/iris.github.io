@@ -332,7 +332,7 @@ var swiper9 = new Swiper('.about_team_wrap', {
 
 var swiper10 = new Swiper('.calendar_slier', {
     slidesPerView: 2,
-    loop: false,
+    loop: true,
     grabCursor: true,
     breakpoints: {
         0: {

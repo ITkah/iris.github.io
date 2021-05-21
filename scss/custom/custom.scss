@@ -1,0 +1,26 @@
+.list-group-item {
+    margin-bottom: 10px;
+    font: 1.125rem "500";
+}
+
+.list-group .checkbox {
+    margin-bottom: 10px;
+}
+
+
+.categories-child-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    .menu-item {
+        color: #000;
+        display: flex;
+        align-items: center;
+        font: 1rem "400";
+    }
+}
+
+.module-title {
+    font: 1.2rem "600";
+    margin-bottom: 10px;
+}

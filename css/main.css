@@ -202,6 +202,14 @@ header {
                 header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li {
                   margin: 0;
                   padding: 0;
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-align: center;
+                  -webkit-align-items: center;
+                      -ms-flex-align: center;
+                          align-items: center;
                   position: static; }
                   header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li:hover .sub_menu_2 {
                     opacity: 1;
@@ -261,7 +269,15 @@ header {
                           display: none; } }
                     header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2 li {
                       margin: 0;
-                      padding: 0; }
+                      padding: 0;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-align: center;
+                      -webkit-align-items: center;
+                          -ms-flex-align: center;
+                              align-items: center; }
                       header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2 li svg {
                         margin-right: 5px; }
                       header nav ul li .sub_menu .sub_menu_wrap .sub_menu_box ul li .sub_menu_2 li a {
@@ -581,7 +597,9 @@ header {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
-      padding-right: 15px; }
+      padding-right: 15px;
+      font: 1rem "400";
+      color: #696973; }
       .breadcrumb .breadcrumb_list li::after {
         content: '\2192	';
         color: #696973;
@@ -701,7 +719,7 @@ header {
         color: #FFF;
         margin-bottom: 10px;
         font: 5.5rem "600"; }
-        @media (max-width: 1280px) {
+        @media (max-width: 1400px) {
           .main_section .container .main_section_wrap .main_title {
             font: 4.5rem "600"; } }
         @media (max-width: 990px) {
@@ -713,6 +731,9 @@ header {
         color: #FFF;
         margin-bottom: 20px;
         font: 2.5rem "400"; }
+        @media (max-width: 1400px) {
+          .main_section .container .main_section_wrap .main_text {
+            font: 1.5rem "400"; } }
         @media (max-width: 990px) {
           .main_section .container .main_section_wrap .main_text {
             font: 1rem/24px "400";
@@ -1871,7 +1892,7 @@ header {
   .bug_container .select_box_coll {
     position: relative;
     width: 70px; }
-    .bug_container .select_box_coll select {
+    .bug_container .select_box_coll input {
       position: relative;
       padding: 5px 10px;
       width: 70px;
@@ -1887,12 +1908,6 @@ header {
       font: 1rem "400";
       appearance: none;
       color: #000; }
-    .bug_container .select_box_coll::after {
-      content: url(../img/order/order_arr.svg);
-      position: absolute;
-      right: 10px;
-      top: 4px;
-      pointer-events: none; }
   .bug_container .title {
     margin-bottom: 10px;
     font: 1.125rem "400"; }
@@ -3300,7 +3315,8 @@ header {
         height: auto;
         width: auto; }
         .catalog_wrap .output_list_wrap .list_box .list_box_panel .list_btn:hover {
-          background: #C8102E; }
+          background: #C8102E;
+          color: #fff; }
 
 .catalog_wrap .output_grid_wrap {
   display: grid;
@@ -5374,6 +5390,33 @@ footer {
 
 .border_red {
   border-color: #C8102E; }
+
+.list-group-item {
+  margin-bottom: 10px;
+  font: 1.125rem "500"; }
+
+.list-group .checkbox {
+  margin-bottom: 10px; }
+
+.categories-child-menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px; }
+  .categories-child-menu .menu-item {
+    color: #000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font: 1rem "400"; }
+
+.module-title {
+  font: 1.2rem "600";
+  margin-bottom: 10px; }
 
 html,
 body {

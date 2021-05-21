@@ -72,7 +72,7 @@
                 color: #FFF;
                 margin-bottom: 10px;
                 font: 5.5rem "600";
-                @media (max-width: 1280px) {
+                @media (max-width: 1400px) {
                     font: 4.5rem "600";
                 }
                 @media (max-width: 990px) {
@@ -85,6 +85,9 @@
                 color: #FFF;
                 margin-bottom: 20px;
                 font: 2.5rem "400";
+                @media (max-width: 1400px) {
+                    font: 1.5rem "400";
+                }
                 @media (max-width: 990px) {
                     font: 1rem/24px "400";
                     text-align: center;
