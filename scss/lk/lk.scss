@@ -72,6 +72,18 @@
         padding: 30px 20px;
         position: relative;
         overflow: hidden;
+        transition: .3s;
+        &:hover {
+            background: #C8102E;
+            p {
+                color: #fff;
+            }
+            svg {
+                path {
+                    fill: #fff;
+                }
+            }
+        }
         &::before {
             content: '';
             position: absolute;
@@ -81,7 +93,8 @@
             border-left: 14px solid #C8102E;
             border-top: 14px solid #C8102E;
         }
-        img {
+        img,
+        svg {
             margin: 0 auto;
             display: block;
             margin-bottom: 10px;
@@ -89,6 +102,7 @@
         p {
             text-align: center;
             color: #000;
+            transition: .3s;
             font: 1rem/150% "300";
         }
     }

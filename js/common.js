@@ -367,3 +367,12 @@ var swiper10 = new Swiper('.calendar_slier', {
         el: '.swiper-pagination',
     },
 });
+
+$(".collapsed").on("click", function() {
+    $(this).toggleClass("collapse_active");
+    $(this).siblings(".collapse").slideToggle(200);
+});
+
+$(".catalog_item_title").on("click", function() {
+    $(this).toggleClass("catalog_item_title_active").siblings(".catalog_custom_wrap").slideToggle(200);
+});
