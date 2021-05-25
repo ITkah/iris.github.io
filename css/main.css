@@ -5718,6 +5718,18 @@ footer {
     .catalog_item_custom .catalog_custom_items a:last-child {
       margin: 0; }
 
+.irs--flat .irs-handle {
+  background: #dd0e1c;
+  border-radius: 100%;
+  height: 12px;
+  width: 12px; }
+
+.irs--flat .irs-bar {
+  height: 4px; }
+
+.irs--flat .irs-line {
+  height: 4px; }
+
 html,
 body {
   padding: 0;

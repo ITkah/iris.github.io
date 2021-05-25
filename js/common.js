@@ -376,3 +376,12 @@ $(".collapsed").on("click", function() {
 $(".catalog_item_title").on("click", function() {
     $(this).toggleClass("catalog_item_title_active").siblings(".catalog_custom_wrap").slideToggle(200);
 });
+
+$(".js-range-slider").ionRangeSlider({
+    type: "double",
+    grid: false,
+    min: 100,
+    max: 1000,
+    from: 0,
+    to: 600,
+});
